@@ -31,7 +31,7 @@ export default function Home() {
           {entries.map((e,i) => {
             return (
               <div key={i}>
-                {e.productName}-{e.rating}
+                {e.productName}-"Rating-"{e.rating}
               </div>
             )
           })}
