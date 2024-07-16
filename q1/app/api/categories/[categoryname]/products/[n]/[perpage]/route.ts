@@ -62,8 +62,8 @@ export async function GET(req:NextRequest,{params}:{params:{"categoryname":strin
   alldata.sort((p)=>{
     return p["rating"]
   })
-  const start=(perpage-1)*10
-  const end=(start+10)
-  const finaldata=alldata.slice(start,end)
-  return NextResponse.json({allproducts:finaldata})
+ // const start=(perpage-1)*10
+  //const end=(start+10)
+  //const finaldata=alldata.slice(start,end)
+  return NextResponse.json({allproducts:alldata})
 }
