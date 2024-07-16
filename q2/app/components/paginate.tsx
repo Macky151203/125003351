@@ -17,13 +17,13 @@ const PaginationControls: FC<PaginationControlsProps> = (
   const router = useRouter()
   const searchParams = useSearchParams()
   const params = new URLSearchParams(searchParams)
-  console.log('this is urlsearchparams')
-  console.log(params)
-  console.log('this is searchparamsrwaw')
-  console.log(searchParams)
+  // console.log('this is urlsearchparams')
+  // console.log(params)
+  // console.log('this is searchparamsrwaw')
+  // console.log(searchParams)
 
   const page = searchParams.get('page') ?? '1'
-  const per_page = searchParams.get('per_page') ?? '7'
+  const per_page = searchParams.get('per_page') ?? '10'
 
   return (
     <div className='flex gap-2'>

@@ -24,7 +24,7 @@ export async function GET(req:NextRequest,{params}:{params:{"categoryname":strin
  const tok= await getauth();
  console.log("TOKENlelo- ",tok)
  
-  const comp=["AMZ", "FLP", "SNP", "ΜΥΝ", "ΑΖΟ"]
+  const comp=["AMZ", "FLP", "SNP", "MYN", "AZO"]
   const cat=[ "Phone", "Computer", "TV", "Earphone", "Tablet", "Charger", "Mouse", "Keypad", "Bluetooth", "Pendrive", "Remote", "Speaker", "Headset", "Laptop", "PC"]
   const ammzres=await fetch(`http://20.244.56.144/test/companies/AMZ/categories/${categoryname}/products?top=${n}&minPrice=1&maxPrice=10000`,{
     headers:{

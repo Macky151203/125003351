@@ -26,24 +26,20 @@ export default function Home() {
   const entries = data.slice(start, end)
   return (
     <>
-      <div className='flex items-center flex-col'>
+      <div className='flex items-center flex-col gap-12'>
         <div className='flex flex-col items-center gap-2'>
           {entries.map((e,i) => {
             return (
               <div key={i}>
-                {e.productName}-"Rating-"{e.rating}
+                Name-{e.productName} , Rating-{e.rating} , Price-{e.price}  
               </div>
             )
           })}
         </div>
-        <div className='top-1/3 absolute flex items-center'>
+        <div className='flex items-center'>
           <PaginationControls hasNextPage={end < data.length} hasPrevPage={start > 0} total={total} />
         </div>
       </div>
-      
-
-
-
     </>
 
 
